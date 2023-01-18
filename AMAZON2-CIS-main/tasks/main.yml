@@ -88,10 +88,10 @@
 #  tags:
 #      - amazon2cis_section6
 
- - include: post.yml
-   tags:
-   - post_tasks
-   - always
+# - include: post.yml
+#   tags:
+#   - post_tasks
+#   - always
 
 - name: flush handlers
   meta: flush_handlers
