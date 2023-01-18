@@ -58,35 +58,35 @@
   tags:
       - always
 
-- include: section_1/main.yml
-  when: amazon2cis_section1
-  tags:
-      - amazon2cis_section1
-
-- include: section_2/main.yml
-  when: amazon2cis_section2
-  tags:
-      - amazon2cis_section2
-
-- include: section_3/main.yml
-  when: amazon2cis_section3
-  tags:
-      - amazon2cis_section3
-
-#- include: section_4/main.yml
-#  when: amazon2cis_section4
+#- include: section_1/main.yml
+#  when: amazon2cis_section1
 #  tags:
-#      - amazon2cis_section4
+#      - amazon2cis_section1
 
-#- include: section_5/main.yml
-#  when: amazon2cis_section5
+#- include: section_2/main.yml
+#  when: amazon2cis_section2
 #  tags:
-#     - amazon2cis_section5
+#      - amazon2cis_section2
 
-#- include: section_6/main.yml
-#  when: amazon2cis_section6
+#- include: section_3/main.yml
+#  when: amazon2cis_section3
 #  tags:
-#      - amazon2cis_section6
+#      - amazon2cis_section3
+
+- include: section_4/main.yml
+  when: amazon2cis_section4
+  tags:
+      - amazon2cis_section4
+
+- include: section_5/main.yml
+  when: amazon2cis_section5
+  tags:
+     - amazon2cis_section5
+
+- include: section_6/main.yml
+  when: amazon2cis_section6
+  tags:
+      - amazon2cis_section6
 
 #- include: post.yml
 #  tags:
