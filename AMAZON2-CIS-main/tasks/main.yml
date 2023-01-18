@@ -73,25 +73,25 @@
 #  tags:
 #      - amazon2cis_section3
 
-#- include: section_4/main.yml
-#  when: amazon2cis_section4
-#  tags:
-#      - amazon2cis_section4
+- include: section_4/main.yml
+  when: amazon2cis_section4
+  tags:
+      - amazon2cis_section4
 
 #- include: section_5/main.yml
 #  when: amazon2cis_section5
 #  tags:
 #     - amazon2cis_section5
 
-#- include: section_6/main.yml
-#  when: amazon2cis_section6
-#  tags:
-#      - amazon2cis_section6
+- include: section_6/main.yml
+  when: amazon2cis_section6
+  tags:
+      - amazon2cis_section6
 
-# - include: post.yml
-#   tags:
-#   - post_tasks
-#   - always
+- include: post.yml
+  tags:
+      - post_tasks
+      - always
 
 - name: flush handlers
   meta: flush_handlers
