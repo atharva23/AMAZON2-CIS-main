@@ -36,21 +36,21 @@
   tags:
       - rule_5.7
 
-- include: check_prereqs.yml
-  tags:
-      - always
-      - prereqs
+#- include: check_prereqs.yml
+# tags:
+#      - always
+#      - prereqs
 
-- include: prelim.yml
-  tags:
-      - prelim_tasks
-      - always
+#- include: prelim.yml
+#  tags:
+#      - prelim_tasks
+#     - always
 
-- import_tasks: pre_remediation_audit.yml
-  when:
-      - run_audit
-  tags:
-      - run_audit
+#- import_tasks: pre_remediation_audit.yml
+#  when:
+#      - run_audit
+#  tags:
+#      - run_audit
 
 - name: Gather the package facts
   package_facts:
@@ -63,30 +63,30 @@
   tags:
       - amazon2cis_section1
 
-- include: section_2/main.yml
-  when: amazon2cis_section2
-  tags:
-      - amazon2cis_section2
+#- include: section_2/main.yml
+#  when: amazon2cis_section2
+#  tags:
+#      - amazon2cis_section2
 
-- include: section_3/main.yml
-  when: amazon2cis_section3
-  tags:
-      - amazon2cis_section3
+#- include: section_3/main.yml
+#  when: amazon2cis_section3
+#  tags:
+#      - amazon2cis_section3
 
-- include: section_4/main.yml
-  when: amazon2cis_section4
-  tags:
-      - amazon2cis_section4
+#- include: section_4/main.yml
+#  when: amazon2cis_section4
+#  tags:
+#      - amazon2cis_section4
 
-- include: section_5/main.yml
-  when: amazon2cis_section5
-  tags:
-     - amazon2cis_section5
+#- include: section_5/main.yml
+#  when: amazon2cis_section5
+#  tags:
+#     - amazon2cis_section5
 
-- include: section_6/main.yml
-  when: amazon2cis_section6
-  tags:
-      - amazon2cis_section6
+#- include: section_6/main.yml
+#  when: amazon2cis_section6
+#  tags:
+#      - amazon2cis_section6
 
 #- include: post.yml
 #  tags:
@@ -96,17 +96,17 @@
 - name: flush handlers
   meta: flush_handlers
 
-- name: run post_remediation audit
-  import_tasks: post_remediation_audit.yml
-  when:
-      - run_audit
-  tags:
-      - run_audit
+#- name: run post_remediation audit
+#  import_tasks: post_remediation_audit.yml
+#  when:
+#      - run_audit
+#  tags:
+#      - run_audit
 
-- name: Show Audit Summary
-  debug:
-      msg: "{{ audit_results.split('\n') }}"
-  when:
-      - run_audit
-  tags:
-      - run_audit
+#- name: Show Audit Summary
+#  debug:
+#      msg: "{{ audit_results.split('\n') }}"
+#  when:
+#      - run_audit
+#  tags:
+#      - run_audit
