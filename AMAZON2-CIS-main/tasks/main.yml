@@ -58,15 +58,15 @@
   tags:
       - always
 
-- include: section_1/main.yml
-  when: amazon2cis_section1
-  tags:
-      - amazon2cis_section1
-
-#- include: section_2/main.yml
-#  when: amazon2cis_section2
+#- include: section_1/main.yml
+#  when: amazon2cis_section1
 #  tags:
-#      - amazon2cis_section2
+#      - amazon2cis_section1
+
+- include: section_2/main.yml
+  when: amazon2cis_section2
+  tags:
+      - amazon2cis_section2
 
 #- include: section_3/main.yml
 #  when: amazon2cis_section3
