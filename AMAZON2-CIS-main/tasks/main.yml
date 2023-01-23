@@ -37,7 +37,7 @@
       - rule_5.7
 
 - include: check_prereqs.yml
- tags:
+  tags:
       - always
       - prereqs
 
