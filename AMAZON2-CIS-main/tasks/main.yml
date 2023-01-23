@@ -36,21 +36,21 @@
   tags:
       - rule_5.7
 
-- include: check_prereqs.yml
-  tags:
-      - always
-      - prereqs
+#- include: check_prereqs.yml
+#  tags:
+#      - always
+#      - prereqs
 
 #- include: prelim.yml
 #  tags:
 #     - prelim_tasks
 #     - always
 
-- import_tasks: pre_remediation_audit.yml
-  when:
-      - run_audit
-  tags:
-      - run_audit
+#- import_tasks: pre_remediation_audit.yml
+#  when:
+#      - run_audit
+#  tags:
+#      - run_audit
 
 - name: Gather the package facts
   package_facts:
