@@ -12,8 +12,8 @@
 - name: "SECTION | 5.4 | Configure PAM"
   include: cis_5.4.x.yml
 
-- name: "SECTION | 5.5.1.x | Set Shadow Password Suite Parameters"
-  include: cis_5.5.1.x.yml
+#- name: "SECTION | 5.5.1.x | Set Shadow Password Suite Parameters"
+#  include: cis_5.5.1.x.yml
 
 - name: "SECTION | 5.5.x"
   include: cis_5.5.x.yml
