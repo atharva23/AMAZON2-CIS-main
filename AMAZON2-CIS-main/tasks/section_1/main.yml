@@ -3,8 +3,8 @@
 - name: "SECTION | 1.1.1.x | Disable unused filesystems"
   include: cis_1.1.1.x.yml
 
-#- name: "SECTION | 1.1 | FileSystem Configuration"
-#  include: cis_1.1.x.yml
+- name: "SECTION | 1.1 | FileSystem Configuration"
+  include: cis_1.1.x.yml
 
 - name: "SECTION | 1.2 | Configure Software Updates"
   include: cis_1.2.x.yml
