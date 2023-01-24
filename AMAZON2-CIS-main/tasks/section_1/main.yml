@@ -19,9 +19,9 @@
 - name: "SECTION | 1.5 | Additional Process Hardening"
   include: cis_1.5.x.yml
 
-- name: "SECTION | 1.6 | Mandatory Access Control"
-  include: cis_1.6.x.yml
-  when: not amazon2cis_selinux_disable
+#- name: "SECTION | 1.6 | Mandatory Access Control"
+#  include: cis_1.6.x.yml
+#  when: not amazon2cis_selinux_disable
 
 - name: "SECTION | 1.7 | Command Line Warning Banners"
   include: cis_1.7.x.yml
