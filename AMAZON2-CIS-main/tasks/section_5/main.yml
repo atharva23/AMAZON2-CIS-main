@@ -15,8 +15,8 @@
 #- name: "SECTION | 5.5.1.x | Set Shadow Password Suite Parameters"
 #  include: cis_5.5.1.x.yml
 
-- name: "SECTION | 5.5.x"
-  include: cis_5.5.x.yml
+#- name: "SECTION | 5.5.x"
+#  include: cis_5.5.x.yml
 
 - name: "SECTION | 5.6.x"
   include: cis_5.6.x.yml
