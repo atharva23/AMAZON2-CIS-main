@@ -26,5 +26,5 @@
 - name: "SECTION | 1.7 | Command Line Warning Banners"
   include: cis_1.7.x.yml
 
-- name: "SECTION | 1.8 | Ensure updates, patches, and additional security software are installed"
-  include: cis_1.8.x.yml
+#- name: "SECTION | 1.8 | Ensure updates, patches, and additional security software are installed"
+#  include: cis_1.8.x.yml
