@@ -13,8 +13,8 @@
   include: cis_1.3.x.yml
   when: amazon2cis_config_aide
 
-- name: "SECTION | 1.4 | Secure Boot Settings"
-  include: cis_1.4.x.yml
+#- name: "SECTION | 1.4 | Secure Boot Settings"
+#  include: cis_1.4.x.yml
 
 - name: "SECTION | 1.5 | Additional Process Hardening"
   include: cis_1.5.x.yml
