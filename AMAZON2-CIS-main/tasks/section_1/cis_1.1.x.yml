@@ -72,25 +72,25 @@
       - rule_1.1.8
       - rule_1.1.9
 
-#- name: "1.1.10 | AUDIT | Ensure separate partition exists for /var"
-#  block:
-#      - name: "1.1.10 | AUDIT | Ensure separate partition exists for /var | Message if absent"
-#        debug:
-#            msg: "Warning! /var does not exist on a seperate partition. You need will need to create a sepearte partition for /var manually"
-#        when: "'/var' not in mount_names"
+- name: "1.1.10 | AUDIT | Ensure separate partition exists for /var"
+  block:
+      - name: "1.1.10 | AUDIT | Ensure separate partition exists for /var | Message if absent"
+        debug:
+            msg: "Warning! /var does not exist on a seperate partition. You need will need to create a sepearte partition for /var manually"
+        when: "'/var' not in mount_names"
 
-#      - name: "1.1.10 | AUDIT | Ensure separate partition exists for /var | Message if present"
-#        debug:
-#            msg: "Congradulations: /var is on a seperate partition"
-#        when: "'/var' in mount_names"
-#  when:
-#      - amazon2cis_rule_1_1_10
-#  tags:
-#      - level2
-#      - automated
-#      - audit
-#      - rule_1.1.10
-#      - mounts
+      - name: "1.1.10 | AUDIT | Ensure separate partition exists for /var | Message if present"
+        debug:
+            msg: "Congradulations: /var is on a seperate partition"
+        when: "'/var' in mount_names"
+  when:
+      - amazon2cis_rule_1_1_10
+  tags:
+      - level2
+      - automated
+      - audit
+      - rule_1.1.10
+      - mounts
 
 - name: "1.1.11 | AUDIT | Ensure separate partition exists for /var/tmp"
   block:
