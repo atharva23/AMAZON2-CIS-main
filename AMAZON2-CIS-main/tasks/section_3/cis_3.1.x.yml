@@ -1,24 +1,6 @@
 ---
 
-- name: "3.1.1 | PATCH | Disable IPv6"
-  sysctl:
-      name: "{{ item }}"
-      value: '1'
-      reload: true
-      state: present
-  loop:
-      - net.ipv6.conf.all.disable_ipv6
-      - net.ipv6.conf.default.disable_ipv6
-  when:
-      - not amazon2cis_ipv6_required
-      - amazon2cis_rule_3_1_1
-  notify: sysctl flush ipv6 route table
-  tags:
-      - level2
-      - manual
-      - patch
-      - rule_3.1.1
-      - ipv6
+
 
 - name: "3.1.2 | PATCH | Ensure wireless interfaces are disabled"
   block:
