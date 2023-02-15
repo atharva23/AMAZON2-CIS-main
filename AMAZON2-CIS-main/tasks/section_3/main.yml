@@ -12,10 +12,10 @@
 - name: "SECTION | 3.4 | Uncommon Network Protocols"
   include: cis_3.4.x.yml
 
-- name: "SECTION | 3.5.1 | Configure firewalld"
-  include: cis_3.5.1.x.yml
-  when:
-  - amazon2cis_firewall == "firewalld"
+#- name: "SECTION | 3.5.1 | Configure firewalld"
+#  include: cis_3.5.1.x.yml
+#  when:
+#  - amazon2cis_firewall == "firewalld"
 
 #- name: "SECTION | 3.5.2 | Configure nftables"
 #  include: cis_3.5.2.x.yml
