@@ -1,20 +1,6 @@
 ---
 
-- name: "3.5.1.1 | PATCH | Ensure FirewallD is installed"
-  package:
-      name: firewalld
-      state: present
-  vars:
-      ansible_python_interpreter: /bin/python
-  when:
-      - amazon2cis_rule_3_5_1_1
-  tags:
-      - level1
-      - automated
-      - patch
-      - rule_3.5.1.1
-      - firewall
-      - firewalld
+
 
 - name: "3.5.1.2 | PATCH | Ensure iptables-services not installed with firewalld"
   package:
